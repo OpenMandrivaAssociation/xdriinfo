@@ -35,6 +35,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xdriinfo
-%{_mandir}/man1/xdriinfo.1x.bz2
+%{_mandir}/man1/xdriinfo.*
 
 
