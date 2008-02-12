@@ -7,9 +7,10 @@ Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.t
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: x11-util-macros		>= 1.1.5
-BuildRequires: libx11-devel		>= 1.1.3
-BuildRequires: libmesagl-devel		>= 7.0.2
+BuildRequires: libx11-devel >= 1.0.0
+BuildRequires: x11-proto-devel >= 1.0.0
+BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: GL-devel
 
 %description
 Driinfo can be used to query configuration information of direct rendering
@@ -19,7 +20,7 @@ drivers (DRI).
 %setup -q -n %{name}-%{version}
 
 %build
-%configure	--x-includes=%{_includedir}\
+%configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
 %make
