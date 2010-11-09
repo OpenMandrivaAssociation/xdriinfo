@@ -1,5 +1,5 @@
 Name: xdriinfo
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: Query configuration information of DRI drivers
 Group: Development/X11
