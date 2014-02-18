@@ -9,7 +9,7 @@ License: MIT
 BuildRequires: pkgconfig(x11) >= 1.0.0
 BuildRequires: x11-proto-devel >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
-BuildRequires: GL-devel
+BuildRequires: pkgconfig(gl)
 
 %description
 Driinfo can be used to query configuration information of direct rendering
