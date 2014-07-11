@@ -1,6 +1,6 @@
 Name: xdriinfo
 Version: 1.0.4
-Release: 9
+Release: 10
 Summary: Query configuration information of DRI drivers
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
