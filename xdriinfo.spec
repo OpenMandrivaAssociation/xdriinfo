@@ -1,13 +1,13 @@
 Name:		xdriinfo
-Version:	1.0.6
-Release:	2
+Version:	1.0.7
+Release:	1
 Summary:	Query configuration information of DRI drivers
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 BuildRequires:	pkgconfig(x11) >= 1.0.0
-BuildRequires:	x11-proto-devel >= 1.0.0
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(xproto)
+BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(gl)
 
 %description
@@ -29,4 +29,4 @@ drivers (DRI).
 
 %files
 %{_bindir}/xdriinfo
-%{_mandir}/man1/xdriinfo.*
+%doc %{_mandir}/man1/xdriinfo.*
